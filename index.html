@@ -53,6 +53,28 @@
             gap: 30px;
         }
 
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 520px) {
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
         .date-section {
             text-align: center;
             color: white;
@@ -301,6 +323,7 @@
     <div class="background-overlay" id="overlay"></div>
 
     <div class="container">
+        <img src="0f6e80b96dffbde3c7369403171ad14f.jpg" alt="头像" class="avatar">
         <div class="date-section">
             <div class="date-day" id="dayOfWeek">星期一</div>
             <div class="date-full" id="fullDate">2024年1月1日</div>
